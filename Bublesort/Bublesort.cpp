@@ -49,6 +49,18 @@ void display() {                                             // prosedur untuk m
 
 }
 
+void BubbleSortArray() {                                 // prosedur untuk mengurutkan Array dengan metode bubblesort
+    int pass = 1;                                        // step 1
+    for (pass; pass <= n - 1; pass++) {                  //looping dengan i dimulai dari 1 hingga n_1
+        for (int j = 0; j <= n - 1 - pass; j++) {        // looping  dengan j dimulai dari 0 hingga n-1            if (a[j] > a[j + 1]) {
+               if (a[j] > a[j+1]){                       // jika nilai pada a[j] lebih besar dari a[j+1]
+                int temp = a[j];                         // simpan nilai a[j] ke variabel sementara temp 
+                a[j] = a[j + 1];                         //Assign nilai a[j + 1 ] ke a[j]
+                a[j + 1] = temp;                         //Assigh nilai temp ke a[j+1]
+            }
+        }
+}
+
 
 
    
